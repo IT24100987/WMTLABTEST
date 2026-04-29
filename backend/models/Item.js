@@ -7,9 +7,9 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Item name is required"],
       trim: true,
     },
-    serialNumber: {
+    MaterialType: {
       type: String,
-      required: [true, "Serial number is required"],
+      required: [true, "Material type is required"],
       trim: true,
     },
     category: {
