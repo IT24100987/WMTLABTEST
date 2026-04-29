@@ -5,6 +5,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
     initialValues || {
       name: "",
       serialNumber: "",
+      phoneNumber: "",
       category: "",
       price: "",
       description: "",
@@ -34,6 +35,9 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
 
       <label>Serial Number</label>
       <input name="serialNumber" value={formData.serialNumber} onChange={handleChange} required />
+
+      <label>Phone Number</label>
+      <input name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} required />
 
       <label>Category</label>
       <input name="category" value={formData.category} onChange={handleChange} required />

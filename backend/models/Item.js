@@ -12,6 +12,11 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Serial number is required"],
       trim: true,
     },
+    phoneNumber: {
+      type: String,
+      required: [true, "Phone number is required"],
+      trim: true,
+    },
     category: {
       type: String,
       required: [true, "Category is required"],
